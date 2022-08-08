@@ -51,3 +51,32 @@ const evenArr = intArr.filter(item => {
 })
 
 console.log(evenArr);
+
+/* 5 */
+
+function m(x, y) {
+  return x**y;
+}
+
+console.log(m(5, 5));
+
+/* 6 */
+
+function access(age) {
+  return age > 16 ? console.log("добро пожаловать") : console.log("вы еще молоды");
+}
+
+access(10);
+access(18);
+
+/* 7 */
+
+function access(age) {
+  if (age == null || age == undefined) return console.log("Введите возраст");
+  return age > 16 ? console.log("добро пожаловать") : console.log("вы еще молоды");
+}
+
+access(10);
+access(18);
+access();
+
