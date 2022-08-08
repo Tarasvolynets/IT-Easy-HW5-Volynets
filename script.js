@@ -33,3 +33,21 @@ console.log( isEven(2));
 console.log( isEven(3));
 console.log( isEven(4));
 console.log( isEven(5));
+
+/* 4 */
+
+function isEven(num) {
+  return num % 2 == 0 ? true : false;
+}
+
+const intArr = [];
+
+for (let i = 1; i <= 50; i++) {
+  intArr.push(i);
+}
+
+const evenArr = intArr.filter(item => {
+  if (isEven(item) == true) return item;
+})
+
+console.log(evenArr);
