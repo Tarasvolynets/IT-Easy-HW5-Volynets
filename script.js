@@ -80,3 +80,57 @@ access(10);
 access(18);
 access();
 
+/* 8 */
+
+let text = "There is two type of people";
+
+function ucfirst(str) {
+  let arr = str.split(" ");
+  strNew = '';
+  arr = arr.map((item, i) => {
+    newItem = item[0].toUpperCase() + item.slice(1);
+    return newItem;
+  })
+
+  arr = arr.join(" ");
+  console.log(arr);
+}
+
+ucfirst(text);
+
+/* 9 */
+
+let text = "var_text_hello";
+
+function ucfirst(str) {
+  let arr = str.split("_");
+  let strNew = '';
+  
+  console.log(arr);
+  arr.forEach((item, i) => {  
+    newItem = item;
+    
+    if (i > 0) {
+      newItem = item[0].toUpperCase() + item.slice(1);        
+    }
+    
+    return strNew += newItem;
+  })
+
+  console.log(strNew);
+}
+
+ucfirst(text);
+
+/* 10 */
+
+let testArr = ["var_text_hello", "car", "js", "JAVA", "money"];
+
+function inArray(str, arr) {
+  return arr.includes(str, 0);
+}
+
+console.log(inArray('text', testArr));
+console.log(inArray('money', testArr));
+console.log(inArray('house', testArr));
+console.log(inArray('js', testArr));
