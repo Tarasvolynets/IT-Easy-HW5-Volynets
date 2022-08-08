@@ -82,7 +82,7 @@ access();
 
 /* 8 */
 
-let text = "There is two type of people";
+let textElse = "There is two type of people";
 
 function ucfirst(str) {
   let arr = str.split(" ");
@@ -96,7 +96,7 @@ function ucfirst(str) {
   console.log(arr);
 }
 
-ucfirst(text);
+ucfirst(textElse);
 
 /* 9 */
 
